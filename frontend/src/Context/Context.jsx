@@ -10,7 +10,7 @@ export const Context = ({ children }) => {
 
   const login = async (inputs) => {
     const res = await axios.post(
-      "http://localhost:8800/api/auth/login",
+      "https://student-mental-health-backend.vercel.app/api/auth/login",
       inputs
     );
     console.log("response from context = ", res)
@@ -18,7 +18,7 @@ export const Context = ({ children }) => {
   };
 
   const logout = async () => {
-    const res = await axios.post("http://localhost:8800/api/auth/logout");
+    const res = await axios.post("https://student-mental-health-backend.vercel.app/api/auth/logout");
     setCurrentUser(null);
   };
 

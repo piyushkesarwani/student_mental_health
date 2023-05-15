@@ -26,7 +26,7 @@ export const Register = () => {
     console.log(inputs);
     try {
       const res = await axios.post(
-        "http://localhost:8800/api/auth/register",
+        "https://student-mental-health-backend.vercel.app/api/auth/register",
         inputs
       );
       console.log(res);
